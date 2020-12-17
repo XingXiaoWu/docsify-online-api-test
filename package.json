@@ -1,0 +1,21 @@
+{
+  "name": "docsify-online-api-test",
+  "version": "1.0.0",
+  "description": "A docsify plugin that go to online api test",
+  "main": "index.js",
+  "scripts": {
+    "build": "",
+    "dev": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XingXiaoWu/docsify-online-api-test.git"
+  },
+  "author": "xing.wu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/XingXiaoWu/docsify-online-api-test/issues"
+  },
+  "homepage": "https://github.com/XingXiaoWu/docsify-online-api-test#readme"
+}

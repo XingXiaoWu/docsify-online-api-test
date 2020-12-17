@@ -1,0 +1,34 @@
+.docsify-online-api-test-button,
+.docsify-online-api-test-button span {
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.docsify-online-api-test-button {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow: visible;
+    padding: 0.65em 0.8em;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    font-size: 1em;
+    background: #808080;
+    background: var(--theme-color, #808080);
+    color: #fff;
+    opacity: 0;
+}
+
+.docsify-online-api-test-button span {
+    border-radius: 3px;
+    background: inherit;
+    pointer-events: none;
+}
+
+
+.docsify-online-api-test-button:focus,
+pre:hover .docsify-online-api-test-button {
+    opacity: 1;
+}
