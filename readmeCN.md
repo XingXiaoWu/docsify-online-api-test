@@ -2,21 +2,21 @@
 [![NPM](https://img.shields.io/npm/v/docsify-online-api-test.svg?style=flat-square)](https://www.npmjs.com/package/docsify-online-api-test)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/XingXiaoWu/docsify-online-api-test/blob/master/LICENSE)
 
-A [docsify](https://docsify.js.org) plugin that adds a button go to other website for online api test .
+一个[docsify](https://docsify.js.org)插件，方便你跳转到在线测试网站（默认是postwomen）.
 
-## Installation
+## 安装
 
 
-Add following script tag to your `index.html` after docsify. 
+在`index.html`中，`docsify`的后面，加一个script标签
 
 ```html
 <script src="https://unpkg.com/docsify-online-api-test"></script>
 ```
 
 
-## Options
+## 可选项
 ### buttonText
-Button text can be customized as follows:
+按钮的文字是可以自定义的：
 
 ```javascript
 window.$docsify = {
@@ -28,9 +28,9 @@ window.$docsify = {
 ```
 
 
-### Localization (l10n)
+### 本地化 (l10n)
 
-Button text can also be customized based on the current URL. Object key/value pairs are processed in the order provided.
+按钮文字也可以跟随当前的url进行本地化，按顺序处理key/value对象。
 
 ```javascript
 window.$docsify = {
@@ -45,14 +45,11 @@ window.$docsify = {
     }
 }
 ```
-
-
-**Note:** Docsify's [alias](https://docsify.js.org/#/configuration?id=alias) option makes it easy to manage local content using separate directories. See the [`/demo/`](https://github.com/XingXiaoWu/docsify-online-api-test/tree/master/demo) content in this repo for an example.
-
+**Note:** Docsify的[alias](https://docsify.js.org/#/configuration?id=alias)可选项能够非常方便的进行本地化，可以看看[`/demo/`](https://github.com/XingXiaoWu/docsify-online-api-test/tree/master/demo) 示例里面是怎么用的.
 
 ### buttonStyle
 
-Button Style, easy to adjust the style, co-exist with other plugins(just like docsify-copy-code)
+按钮样式，非常简单就能修改样式，方便与其他插件共存（比如docsify-copy-code）
 
 ```
 window.$docsify = {
@@ -66,7 +63,7 @@ window.$docsify = {
 
 ### spanStyle
 
-Button's span Style.
+Button里面的span样式
 ```
 window.$docsify = {
     onlineApiTest: {
@@ -78,7 +75,7 @@ window.$docsify = {
 ```
 
 ### url
-The target address of the jump.
+跳转的目标url
 ```
 window.$docsify = {
     onlineApiTest: {
@@ -90,6 +87,8 @@ window.$docsify = {
 ```
 
 
+
+
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/XingXiaoWu/docsify-online-api-test/blob/master/LICENSE) for details.
+这个项目是在MIT许可证下授权的。有关详细信息，请参阅许可证[LICENSE](https://github.com/XingXiaoWu/docsify-online-api-test/blob/master/LICENSE)。
