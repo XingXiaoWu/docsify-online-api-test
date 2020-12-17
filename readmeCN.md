@@ -92,3 +92,6 @@ window.$docsify = {
 ## License
 
 这个项目是在MIT许可证下授权的。有关详细信息，请参阅许可证[LICENSE](https://github.com/XingXiaoWu/docsify-online-api-test/blob/master/LICENSE)。
+
+## 另外
+有许多代码参照 [docsify-copy-code](https://github.com/jperasmus/docsify-copy-code). 感谢 [docsify-copy-code](https://github.com/jperasmus/docsify-copy-code).

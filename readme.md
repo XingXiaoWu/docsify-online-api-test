@@ -93,3 +93,6 @@ window.$docsify = {
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](https://github.com/XingXiaoWu/docsify-online-api-test/blob/master/LICENSE) for details.
+
+# P.S
+There are many references to code form [docsify-copy-code](https://github.com/jperasmus/docsify-copy-code). Thanks for [docsify-copy-code](https://github.com/jperasmus/docsify-copy-code).
