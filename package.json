@@ -2,17 +2,38 @@
   "name": "docsify-online-api-test",
   "version": "1.0.0",
   "description": "A docsify plugin that go to online api test",
-  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/docsify-online-api-test.js",
+  "unpkg": "dist/docsify-online-api-test.min.js",
   "scripts": {
-    "build": "",
-    "dev": "",
+    "build": "rollup -c",
+    "preview":"sh ./sh/preview.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "autoprefixer": "^9.4.6",
+    "browser-sync": "^2.26.3",
+    "compression": "^1.7.3",
+    "lodash.merge": "^4.6.1",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.1.2",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-eslint": "^5.0.0",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-postcss": "^2.0.0",
+    "rollup-plugin-uglify": "^6.0.1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/XingXiaoWu/docsify-online-api-test.git"
   },
-  "author": "xing.wu",
+  "author": "xing.wu <329106954@qq.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/XingXiaoWu/docsify-online-api-test/issues"

@@ -1,10 +1,20 @@
 import styles from './styles.css';
 
 function docsifyOnlineApiTest(hook, vm) {
+
+    let docsifyOnlineApiTestUrl = "";
+
     hook.doneEach(function(){
         const targetElms = Array.apply(null, document.querySelectorAll('pre[data-lang]'));
         const i18n = {
+            // 按钮文字
             buttonText: 'Go to online api test website',
+            // 按钮样式
+            buttonStyle: '',
+            // 文字样式
+            spanStyle:'',
+            // 跳转地址
+            url: 'https://hoppscotch.io/cn',
         };
 
         // Update i18n strings based on options and location.href
@@ -26,11 +36,11 @@ function docsifyOnlineApiTest(hook, vm) {
                 }
             })
         }
-
+        docsifyOnlineApiTestUrl = i18n.url;
 
         const template = [
-            '<button class="docsify-online-api-test-button">',
-            `<span class="label">${i18n.buttonText}</span>`,
+            `<button class="docsify-online-api-test-button" style="${i18n.buttonStyle}">`,
+            `<span class="label" style="${i18n.spanStyle}">${i18n.buttonText}</span>`,
             '</button>'
         ].join('');
 
@@ -42,10 +52,11 @@ function docsifyOnlineApiTest(hook, vm) {
     hook.mounted(function() {
         const listenerHost = document.querySelector('.content');
         listenerHost.addEventListener('click', event => {
-            const isCopyCodeButton = evt.target.classList.contains('docsify-online-api-test-button');
+            const isCopyCodeButton = event.target.classList.contains('docsify-online-api-test-button');
             // 判断按钮是否存在
             if (isCopyCodeButton) {
                 // 点击
+                window.open(docsifyOnlineApiTestUrl) 
             }
         })
     })
